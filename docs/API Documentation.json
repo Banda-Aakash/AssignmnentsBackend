@@ -1,0 +1,244 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "ClassroomAssignment",
+    "collectionId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+    "dateExported": "2024-04-20T10:20:18.475Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cee3b935-cf2f-4509-8ac4-1e9408ba56be",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "CreateAssignments",
+            "url": "http://localhost:3000/api/assignments",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-18T20:19:00.872Z",
+            "modified": "2024-04-20T09:51:18.960Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Assishnment-2\",\n  \"description\":\"This is body\",\n  \"dueDate\":\"15/4/2024\",\n  \"createdBy\":\"Teacher\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c190dcd6-019d-476b-aff0-8242c9ea6439",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-18T20:19:12.613Z",
+            "modified": "2024-04-20T09:48:26.061Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDcxNTczLCJleHAiOjE3MTM0NzUxNzN9._a-ywKFsI5As-aZDiO-sj5-iFWgwXA_LOzJ2F-LKNzw",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Arya\",\n  \"password\": \"password123\",\n  \"role\":\"Teacher\"\n}\n\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "dd72f2d0-92f8-4432-9fad-8cf92e22c413",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "ViewAssignments",
+            "url": "http://localhost:3000/api/assignments",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-18T20:23:50.068Z",
+            "modified": "2024-04-20T09:50:43.275Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ],
+            "params": [
+                {
+                    "name": "title",
+                    "value": "This is title",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"This is title\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "492c8bb8-51ca-4c17-b021-8329ea7718fd",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "UpdateAssignment",
+            "url": "http://localhost:3000/api/assignments/4",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-18T20:26:59.961Z",
+            "modified": "2024-04-20T09:52:37.456Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Assignment-1\",\n  \"description\":\"This is an assignment for which you will be graded\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0d8f69cd-b8be-402b-a055-00984ea2a3f6",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "DeleteAssignment",
+            "url": "http://localhost:3000/api/assignments/2",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-18T20:28:57.935Z",
+            "modified": "2024-04-20T09:53:15.208Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ]
+        },
+        {
+            "_id": "d47bdc27-2a53-4524-b505-4e7e930a8aa0",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "FilterAssignment",
+            "url": "http://localhost:3000/api/assignments?title=Assignment-1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-18T20:33:12.850Z",
+            "modified": "2024-04-20T09:52:59.428Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ],
+            "params": [
+                {
+                    "name": "title",
+                    "value": "Assignment-1",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "c18aa397-cfb8-4679-8471-a8ed23eae074",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "SubmitAssignment",
+            "url": "http://localhost:3000/api/assignments/4/submit",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-18T20:35:41.620Z",
+            "modified": "2024-04-20T10:05:20.103Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"studentID\":\"1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b4c05d69-2f67-4c04-93be-931ff2ffa835",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "GradeAssignment",
+            "url": "http://localhost:3000/api/assignments/4/grade",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-04-18T20:45:37.188Z",
+            "modified": "2024-04-20T10:07:54.242Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"grade\":\"9.2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "758bae1d-fcf4-4613-8830-e68399a572ff",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "GetReport",
+            "url": "http://localhost:3000/api/reports/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-04-18T20:46:38.479Z",
+            "modified": "2024-04-20T10:06:08.514Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDcxNTczLCJleHAiOjE3MTM0NzUxNzN9._a-ywKFsI5As-aZDiO-sj5-iFWgwXA_LOzJ2F-LKNzw"
+                }
+            ]
+        },
+        {
+            "_id": "48381a19-9f8e-4dec-a022-b8c0486c8abb",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "userSignup",
+            "url": "http://localhost:3000/api/users",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-04-19T05:21:12.895Z",
+            "modified": "2024-04-20T10:10:24.245Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Aakash\",\n  \"password\": \"password123\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "5c231430-f02e-4167-b17a-a164bd3d3c89",
+            "colId": "cf764706-a08c-4cf4-ad8f-263fc5f2dac2",
+            "containerId": "",
+            "name": "sortAssignments",
+            "url": "http://localhost:3000/api/assignments/sort",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-04-20T09:45:53.030Z",
+            "modified": "2024-04-20T09:48:43.481Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNjA2NTA2LCJleHAiOjE3MTM2MTAxMDZ9.YWbDaCyvLy6oM0NRikrkm3XWdYnfmT1f_doQRVIsq64"
+                }
+            ]
+        }
+    ],
+    "ref": "giD6afA13S4O7lkAGOd7MYtwJ7LTFzWqE2QVc_JX7kFUxVlTY42SGfm9tAvsEV_vQu-QsNgwuEt6aEnuZXXvlg"
+}

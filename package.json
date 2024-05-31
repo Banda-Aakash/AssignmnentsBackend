@@ -1,0 +1,20 @@
+{
+  "name": "classroom_assignment",
+  "version": "1.0.0",
+  "description": "Classroom Assignment Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.13",
+    "redis": "^4.6.13",
+    "sqlite3": "^5.1.7"
+  }
+}
